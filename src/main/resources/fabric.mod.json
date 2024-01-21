@@ -2,14 +2,15 @@
 	"schemaVersion": 1,
 	"id": "progressionfixed",
 	"version": "${version}",
-	"name": "ProgressionFixed",
+	"name": "Progression Fixed",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"TriQue"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/TriQue06/progression-fixed-1.20.x",
+		"issues": "https://github.com/TriQue06/progression-fixed-1.20.x/issues",
+		"repo": "https://github.com/TriQue06/progression-fixed-1.20.x"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/progressionfixed/icon.png",
@@ -22,9 +23,6 @@
 			"net.trique.progressionfixed.ProgressionFixedDataGenerator"
 		]
 	},
-	"mixins": [
-		"progressionfixed.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.15.3",
 		"minecraft": "~1.20",
