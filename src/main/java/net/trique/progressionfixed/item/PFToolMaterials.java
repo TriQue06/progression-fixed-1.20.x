@@ -1,15 +1,16 @@
 package net.trique.progressionfixed.item;
 
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
 public enum PFToolMaterials implements ToolMaterial {
-
-    COPPER(0, 59, 2.0F, 0.0F, 15, () -> {
+    COPPER(1, 206, 5.0F, 1.5F, 22, () -> {
         return Ingredient.ofItems(Items.COPPER_INGOT);
     });
 
@@ -50,6 +51,6 @@ public enum PFToolMaterials implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return (Ingredient) this.repairIngredient.get();
     }
 }
